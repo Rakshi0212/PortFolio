@@ -6,7 +6,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
   initTypewriter();
-  initTerminal();
   initSkillsFilter();
   initClipboard();
   initResumeModal();
@@ -100,91 +99,6 @@ function initTypewriter() {
   type();
 }
 
-/* ==========================================================================
-   3. INTERACTIVE TERMINAL SIMULATOR
-   ========================================================================== */
-function initTerminal() {
-  const termButtons = document.querySelectorAll('.term-btn');
-  const codeOutput = document.getElementById('terminal-output');
-  const cmdDisplay = document.getElementById('terminal-cmd');
-
-  if (!codeOutput || !cmdDisplay) return;
-
-  const dataset = {
-    'bio': {
-      cmd: 'rakshitha.get_profile()',
-      content: `{
-  <span class="json-key">"name"</span>: <span class="json-string">"Rakshitha"</span>,
-  <span class="json-key">"location"</span>: <span class="json-string">"Udupi, Karnataka, India"</span>,
-  <span class="json-key">"education"</span>: <span class="json-string">"B.E. in Artificial Intelligence & Data Science"</span>,
-  <span class="json-key">"institution"</span>: <span class="json-string">"SMVITM, Bantakal"</span>,
-  <span class="json-key">"current_cgpa"</span>: <span class="json-num">9.1</span>,
-  <span class="json-key">"status"</span>: <span class="json-string">"Actively seeking Internships"</span>
-}`
-    },
-    'skills': {
-      cmd: 'rakshitha.get_core_stack()',
-      content: `{
-  <span class="json-key">"programming"</span>: [<span class="json-string">"Python"</span>, <span class="json-string">"SQL (MySQL)"</span>],
-  <span class="json-key">"data_science_ml"</span>: [<span class="json-string">"NumPy"</span>, <span class="json-string">"Pandas"</span>, <span class="json-string">"Matplotlib"</span>, <span class="json-string">"Machine Learning (basics)"</span>, <span class="json-string">"EDA"</span>, <span class="json-string">"Power BI & Tableau (basics)"</span>],
-  <span class="json-key">"database_adv"</span>: [<span class="json-string">"Triggers"</span>, <span class="json-string">"Stored Procedures"</span>, <span class="json-string">"Schema Optimization"</span>],
-  <span class="json-key">"tools_deployment"</span>: [<span class="json-string">"Git"</span>, <span class="json-string">"GitHub"</span>, <span class="json-string">"Render Cloud"</span>, <span class="json-string">"Microsoft Excel"</span>]
-}`
-    },
-    'experience': {
-      cmd: 'rakshitha.get_work_experience()',
-      content: `{
-  <span class="json-key">"role"</span>: <span class="json-string">"Full Stack Development Virtual Intern"</span>,
-  <span class="json-key">"organization"</span>: <span class="json-string">"Code Alpha"</span>,
-  <span class="json-key">"duration"</span>: <span class="json-string">"20 Jul 2026 – 20 Aug 2026"</span>,
-  <span class="json-key">"honors"</span>: [<span class="json-string">"Certificate of Completion"</span>, <span class="json-string">"Letter of Recommendation"</span>],
-  <span class="json-key">"domain"</span>: <span class="json-string">"Full Stack Development & Emerging Technologies"</span>
-}`
-    },
-    'projects': {
-      cmd: 'rakshitha.get_active_deployments()',
-      content: `[
-  {
-    <span class="json-key">"project"</span>: <span class="json-string">"CareerPulse AI"</span>,
-    <span class="json-key">"type"</span>: <span class="json-string">"Tech Career Skill Gap & Salary Valuation Platform"</span>,
-    <span class="json-key">"deployment"</span>: <span class="json-string">"Live on Render"</span>,
-    <span class="json-key">"metric_output"</span>: <span class="json-string">"Salary Valuation in ₹ LPA + Skill Gap Roadmaps"</span>,
-    <span class="json-key">"live_url"</span>: <span class="json-string">"https://careerpulse-ai-qmvh.onrender.com"</span>
-  },
-  {
-    <span class="json-key">"project"</span>: <span class="json-string">"Vehicle Rental Management System"</span>,
-    <span class="json-key">"type"</span>: <span class="json-string">"Enterprise Fleet & Booking Platform"</span>,
-    <span class="json-key">"features"</span>: [<span class="json-string">"Triggers"</span>, <span class="json-string">"Stored Procedures"</span>, <span class="json-string">"Flask Backend"</span>, <span class="json-string">"MySQL"</span>],
-    <span class="json-key">"live_url"</span>: <span class="json-string">"https://vehicle-rental-system-j894.onrender.com/"</span>
-  }
-]`,
-    },
-    'contact': {
-      cmd: 'rakshitha.get_channels()',
-      content: `{
-  <span class="json-key">"academic_email"</span>: <span class="json-string">"rakshitha.24ad034@sode-edu.in"</span>,
-  <span class="json-key">"personal_email"</span>: <span class="json-string">"rakshithak275@gmail.com"</span>,
-  <span class="json-key">"phone"</span>: <span class="json-string">"+91 6362314817"</span>,
-  <span class="json-key">"linkedin"</span>: <span class="json-string">"https://www.linkedin.com/in/rakshitha-kulal-30b36635a"</span>,
-  <span class="json-key">"github"</span>: <span class="json-string">"https://github.com/Rakshi0212"</span>,
-  <span class="json-key">"location"</span>: <span class="json-string">"Shirva, Udupi, Karnataka – 574116"</span>
-}`
-    }
-  };
-
-  termButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      termButtons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const key = btn.getAttribute('data-cmd');
-      if (dataset[key]) {
-        cmdDisplay.textContent = dataset[key].cmd;
-        codeOutput.innerHTML = dataset[key].content;
-      }
-    });
-  });
-}
 
 /* ==========================================================================
    4. SKILLS FILTER TABS
