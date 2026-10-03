@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rakshitha | AI & Data Science Engineer | Portfolio</title>
+  <meta name="description" content="Portfolio of Rakshitha - Third-year B.E. student in Artificial Intelligence & Data Science at SMVITM (9.1 CGPA). Full-stack Python & Flask developer with live deployed ML and database systems.">
+  <meta name="keywords" content="Rakshitha, Data Science, Artificial Intelligence, Machine Learning, Python, Flask, MySQL, SMVITM, Udupi, CareerPulse AI, Vehicle Rental System">
+  <meta name="author" content="Rakshitha">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%2306b6d4'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='55' font-family='sans-serif' font-weight='900' fill='white'>R</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Ambience & Grid Overlay -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="container nav-container">
+        <a href="#hero" class="brand-logo" aria-label="Rakshitha Home">
+          <div class="logo-badge">R</div>
+          <div class="brand-meta">
+            <span class="brand-text">Rakshitha</span>
+            <span class="brand-tag">AI & Data Science</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Right Side Nav Actions -->
+        <div class="nav-actions">
+          <div class="status-pill" title="Actively Seeking Opportunities">
+            <span class="pulse-dot"></span>
+            <span>Available for Internships</span>
+          </div>
+          <button class="btn btn-secondary btn-sm open-resume-modal" id="btn-nav-resume">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            Resume
+          </button>
+          <a href="#contact" class="btn btn-primary btn-sm">Let's Connect</a>
+          <button class="mobile-toggle" aria-label="Toggle mobile menu" id="mobile-toggle-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <button class="btn btn-glow open-resume-modal" style="margin-top: 1rem; width: 100%;">View Full Resume</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span>Third-Year B.E. • AI & Data Science</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hello, I'm <br>
+              <span class="gradient-text">Rakshitha</span>
+            </h1>
+
+            <div class="typewriter-wrapper" aria-live="polite">
+              <span class="cmd-prompt">&gt;</span>
+              <span id="typewriter-text"></span>
+              <span class="cursor-blink">_</span>
+            </div>
+
+            <p class="hero-description">
+              Passionate engineering student at <strong>SMVITM (9.1 CGPA)</strong> with hands-on experience in <strong>Python, SQL, Data Analysis, and Flask-based web applications</strong>. I build intelligent, end-to-end data systems that solve real-world problems.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
+                <span>View Projects</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <button class="btn btn-secondary open-resume-modal" id="btn-hero-resume">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>View Resume</span>
+              </button>
+              <a href="https://github.com/Rakshi0212" target="_blank" rel="noopener noreferrer" class="btn btn-glow" id="btn-hero-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/rakshitha-kulal-30b36635a" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="btn-hero-linkedin" style="gap: 0.5rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-target="9.1" data-decimal="true">9.1</span>
+                <span class="stat-label">Current CGPA</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="2" data-suffix="+">2+</span>
+                <span class="stat-label">Deployed Apps</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="4" data-suffix="+">4+</span>
+                <span class="stat-label">Certifications</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="100" data-suffix="%">100%</span>
+                <span class="stat-label">Hands-on Driven</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual & Avatar Display -->
+          <div class="hero-visual">
+            <div class="avatar-card-container">
+              
+              <!-- Floating Interactive Badges -->
+              <div class="floating-badge badge-1">
+                <div class="badge-icon">🤖</div>
+                <div class="badge-info">
+                  <div style="font-size:0.75rem; color:var(--text-dim);">Specialization</div>
+                  <div style="color:var(--text-main);">AI & Data Science</div>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-2">
+                <div class="badge-icon">📊</div>
+                <div class="badge-info">
+                  <div style="font-size:0.75rem; color:var(--text-dim);">Projects</div>
+                  <div style="color:var(--text-main);">Data Science & Analytics</div>
+                </div>
+              </div>
+
+              <div class="avatar-card">
+                <img src="assets/images/avatar.jpg" alt="Rakshitha - AI & Data Science Engineer" class="avatar-image">
+                <div class="avatar-overlay-gradient"></div>
+                <div class="avatar-footer-info">
+                  <div>
+                    <div class="avatar-name">Rakshitha</div>
+                    <div class="avatar-sub">Data Science & Data Analytics Projects</div>
+                  </div>
+                  <div class="grade-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    9.1 CGPA
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT & INTERACTIVE CODE TERMINAL SECTION
+         ========================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Profile Overview</div>
+          <h2 class="section-title">Driven by Data, <br><span class="gradient-text">Engineered for Impact</span></h2>
+          <p class="section-desc">
+            Combining statistical rigor and machine learning with full-stack software development to build intuitive, deployable tools.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <div class="about-info">
+            <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Bridging Algorithms & Applications</h3>
+            <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+              I am a third-year undergraduate student in <strong>Artificial Intelligence and Data Science</strong> at <strong>Shri Madhwa Vadiraja Institute of Technology and Management (SMVITM), Bantakal</strong>, maintaining a top-tier <strong>9.1 CGPA</strong>.
+            </p>
+            <p style="font-size: 1.05rem; line-height: 1.8;">
+              My focus centers on end-to-end data workflows: from wrangling and exploratory data analysis with <strong>Pandas & NumPy</strong> to designing normalized relational databases with <strong>MySQL Stored Procedures & Triggers</strong>, and deploying responsive user interfaces powered by <strong>Flask REST APIs</strong>.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-box">
+                <div class="highlight-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                </div>
+                <div class="highlight-content">
+                  <h4>Cloud Deployment & Production Focus</h4>
+                  <p>I don't just write scripts locally; I containerize/deploy applications online on cloud providers like Render with active databases and clean documentation.</p>
+                </div>
+              </div>
+
+              <div class="highlight-box">
+                <div class="highlight-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                </div>
+                <div class="highlight-content">
+                  <h4>Advanced Database Engineering</h4>
+                  <p>Deep practical proficiency in MySQL relational architecture, indexing, trigger-based business logic, and automated transaction management.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Code Terminal Simulator -->
+          <div class="terminal-container">
+            <div class="terminal-window">
+              <div class="terminal-header">
+                <div class="terminal-controls">
+                  <span class="control-dot dot-red"></span>
+                  <span class="control-dot dot-yellow"></span>
+                  <span class="control-dot dot-green"></span>
+                </div>
+                <div class="terminal-title">rakshitha@engineer-env: ~ (python3)</div>
+                <div style="font-size: 0.75rem; color: var(--accent-emerald-light); font-family: var(--font-mono);">● active</div>
+              </div>
+
+              <div class="terminal-body">
+                <div class="cmd-line">
+                  <span class="cmd-prompt">&gt;&gt;&gt; </span>
+                  <span class="cmd-code" id="terminal-cmd">rakshitha.get_profile()</span>
+                </div>
+
+                <div class="json-output" id="terminal-output">
+{
+  <span class="json-key">"name"</span>: <span class="json-string">"Rakshitha"</span>,
+  <span class="json-key">"location"</span>: <span class="json-string">"Udupi, Karnataka, India"</span>,
+  <span class="json-key">"education"</span>: <span class="json-string">"B.E. in Artificial Intelligence & Data Science"</span>,
+  <span class="json-key">"institution"</span>: <span class="json-string">"SMVITM, Bantakal"</span>,
+  <span class="json-key">"current_cgpa"</span>: <span class="json-num">9.1</span>,
+  <span class="json-key">"status"</span>: <span class="json-string">"Actively seeking Internships"</span>
+}
+                </div>
+
+                <div style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 0.5rem;">Click to query developer object:</div>
+                <div class="terminal-interactive-btns">
+                  <button class="term-btn active" data-cmd="bio">get_profile()</button>
+                  <button class="term-btn" data-cmd="skills">get_core_stack()</button>
+                  <button class="term-btn" data-cmd="experience">get_work_experience()</button>
+                  <button class="term-btn" data-cmd="projects">get_active_deployments()</button>
+                  <button class="term-btn" data-cmd="contact">get_channels()</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS MATRIX SECTION
+         ========================================================================== */
+    -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Competencies</div>
+          <h2 class="section-title">Technical <span class="gradient-text">Skillset</span></h2>
+          <p class="section-desc">
+            Core technical proficiencies spanning predictive modeling, backend architecture, relational data engineering, and tooling.
+          </p>
+        </div>
+
+        <!-- Filter Navigation -->
+        <div class="filter-nav">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="ai-ml">Data Science & ML</button>
+          <button class="filter-btn" data-filter="web-backend">Web & Backend</button>
+          <button class="filter-btn" data-filter="database">Databases & SQL</button>
+          <button class="filter-btn" data-filter="tools">Tools & DevOps</button>
+          <button class="filter-btn" data-filter="soft">Core Competencies</button>
+        </div>
+
+        <!-- Skills Cards Grid -->
+        <div class="skills-grid">
+          
+          <!-- Card 1: Data Science & ML -->
+          <div class="skill-card" data-category="ai-ml">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #38bdf8;">🧠</div>
+              <div>
+                <h3 class="skill-card-title">Data Science & ML</h3>
+                <span class="skill-category-label">Predictive Analysis</span>
+              </div>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              Data manipulation, statistical analysis, feature engineering, and model training for real-world estimations.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Matplotlib</span>
+              <span class="skill-tag">Machine Learning (basics)</span>
+              <span class="skill-tag">EDA (Basics)</span>
+              <span class="skill-tag">Power BI & Tableau (Basics)</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-info">
+                <span>Proficiency Level</span>
+                <span style="color: var(--accent-cyan-light);">Advanced</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Python Programming -->
+          <div class="skill-card" data-category="ai-ml">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #facc15;">🐍</div>
+              <div>
+                <h3 class="skill-card-title">Python Core</h3>
+                <span class="skill-category-label">Primary Language</span>
+              </div>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              Object-oriented programming, data structures, algorithms, automated scripts, and scientific computation.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Python 3.x</span>
+              <span class="skill-tag">OOP</span>
+              <span class="skill-tag">Data Structures</span>
+              <span class="skill-tag">File I/O</span>
+              <span class="skill-tag">Automation</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-info">
+                <span>Proficiency Level</span>
+                <span style="color: var(--accent-cyan-light);">92%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Databases & SQL -->
+          <div class="skill-card" data-category="database">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #60a5fa;">🗄️</div>
+              <div>
+                <h3 class="skill-card-title">SQL & MySQL</h3>
+                <span class="skill-category-label">Data Architecture</span>
+              </div>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              Relational schema design, complex joins, subqueries, view creation, and transaction integrity.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Complex Queries</span>
+              <span class="skill-tag">Normalization</span>
+              <span class="skill-tag">ER Diagrams</span>
+              <span class="skill-tag">Indexing</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-info">
+                <span>Proficiency Level</span>
+                <span style="color: var(--accent-cyan-light);">90%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Stored Procedures & Triggers -->
+          <div class="skill-card" data-category="database">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #a78bfa;">⚡</div>
+              <div>
+                <h3 class="skill-card-title">Triggers & Procedures</h3>
+                <span class="skill-category-label">Advanced Database</span>
+              </div>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              Automating enterprise business logic directly within the database layer for data consistency and performance.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Stored Procedures</span>
+              <span class="skill-tag">Database Triggers</span>
+              <span class="skill-tag">Transaction Control</span>
+              <span class="skill-tag">Data Auditing</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-info">
+                <span>Proficiency Level</span>
+                <span style="color: var(--accent-purple-light);">86%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 86%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Web & Backend -->
+          <div class="skill-card" data-category="web-backend">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #34d399;">🌐</div>
+              <div>
+                <h3 class="skill-card-title">Flask & REST APIs</h3>
+                <span class="skill-category-label">Web Framework</span>
+              </div>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              Developing modular RESTful endpoints, request routing, session management, and JSON API design.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Jinja2</span>
+              <span class="skill-tag">HTTP Protocols</span>
+              <span class="skill-tag">Full-Stack Flow</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-info">
+                <span>Proficiency Level</span>
+                <span style="color: var(--accent-emerald-light);">85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Tools & Deployment -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #f472b6;">🛠️</div>
+              <div>
+                <h3 class="skill-card-title">Deployment & Tools</h3>
+                <span class="skill-category-label">DevOps & Analysis</span>
+              </div>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              Version control, collaborative workflows, cloud hosting, and data spreadsheet modeling.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Render Cloud</span>
+              <span class="skill-tag">Microsoft Excel</span>
+              <span class="skill-tag">VS Code</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-info">
+                <span>Proficiency Level</span>
+                <span style="color: var(--accent-cyan-light);">88%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7: Soft Skills -->
+          <div class="skill-card" data-category="soft">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #fb923c;">🤝</div>
+              <div>
+                <h3 class="skill-card-title">Professional Strengths</h3>
+                <span class="skill-category-label">Interpersonal</span>
+              </div>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              Structured analytical thinking, collaboration in cross-functional project teams, and clear communication.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Teamwork</span>
+              <span class="skill-tag">Communication</span>
+              <span class="skill-tag">Fast Learner</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-info">
+                <span>Impact</span>
+                <span style="color: var(--accent-cyan-light);">Excellence</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8: Languages -->
+          <div class="skill-card" data-category="soft">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper" style="color: #38bdf8;">🗣️</div>
+              <div>
+                <h3 class="skill-card-title">Languages</h3>
+                <span class="skill-category-label">Multilingual</span>
+              </div>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              Effective communication across multiple languages for professional collaboration.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">English (Conversational)</span>
+              <span class="skill-tag">Kannada (Conversational)</span>
+              <span class="skill-tag">Hindi (Basic)</span>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar-info">
+                <span>Versatility</span>
+                <span style="color: var(--accent-cyan-light);">Active</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS SECTION (WITH LIVE DEMOS & GITHUB LINKS)
+         ========================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Featured Engineering</div>
+          <h2 class="section-title">Production <span class="gradient-text">Deployments</span></h2>
+          <p class="section-desc">
+            Real applications built from the ground up, backed by machine learning models and robust relational databases.
+          </p>
+        </div>
+
+        <div class="projects-container">
+          
+          <!-- PROJECT 1: CareerPulse AI -->
+          <article class="project-card" id="project-careerpulse">
+            <div class="project-preview">
+              <img src="assets/images/careerpulse.jpg" alt="CareerPulse AI Platform Interface" class="project-img">
+              <div class="preview-overlay">
+                <span class="preview-badge-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  Interactive Dashboard
+                </span>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div>
+                <div class="project-meta-top">
+                  <span class="project-tagline">DATA SCIENCE & MACHINE LEARNING</span>
+                  <span class="project-badge-live">
+                    <span class="pulse-dot"></span>
+                    Live on Render
+                  </span>
+                </div>
+
+                <h3 class="project-title">CareerPulse AI</h3>
+                <h4 style="font-size: 1rem; color: var(--accent-cyan-light); font-weight: 500; margin-bottom: 1rem;">
+                  Tech Career Skill Gap & Salary Valuation Platform
+                </h4>
+
+                <p class="project-desc">
+                  An end-to-end Data Science and Machine Learning platform engineered to estimate expected market compensation (₹ LPA) for students, fresh engineering graduates, and tech job seekers.
+                </p>
+
+                <ul class="project-feature-list">
+                  <li>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Evaluates candidate job-readiness tiers through multidimensional skill assessments.</span>
+                  </li>
+                  <li>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Pinpoints high-impact missing skills that maximize market valuation.</span>
+                  </li>
+                  <li>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Generates tailored learning roadmaps to bridge critical career skill deficiencies.</span>
+                  </li>
+                </ul>
+
+                <div class="project-tech-stack">
+                  <span class="tech-pill">Python</span>
+                  <span class="tech-pill">Machine Learning</span>
+                  <span class="tech-pill">Pandas</span>
+                  <span class="tech-pill">NumPy</span>
+                  <span class="tech-pill">Flask</span>
+                  <span class="tech-pill">Render</span>
+                </div>
+              </div>
+
+              <div class="project-links">
+                <a href="https://careerpulse-ai-qmvh.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                  <span>Launch Live Demo</span>
+                </a>
+                <a href="https://github.com/Rakshi0212/CareerPulse-AI" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Vehicle Rental Management System -->
+          <article class="project-card reverse" id="project-vehiclerental">
+            <div class="project-preview">
+              <img src="assets/images/vehiclerental.jpg" alt="Vehicle Rental Management System Interface" class="project-img">
+              <div class="preview-overlay">
+                <span class="preview-badge-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  Fleet Analytics UI
+                </span>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div>
+                <div class="project-meta-top">
+                  <span class="project-tagline" style="color: var(--accent-purple-light);">FULL-STACK & DATABASE AUTOMATION</span>
+                  <span class="project-badge-live">
+                    <span class="pulse-dot"></span>
+                    Live on Render
+                  </span>
+                </div>
+
+                <h3 class="project-title">Vehicle Rental Management System</h3>
+                <h4 style="font-size: 1rem; color: var(--accent-purple-light); font-weight: 500; margin-bottom: 1rem;">
+                  Enterprise Fleet, Booking & Transaction Engine
+                </h4>
+
+                <p class="project-desc">
+                  A comprehensive full-stack enterprise web application built to streamline operations across vehicle rentals, customer KYC, fleet availability, reservations, payments, and automated maintenance tracking.
+                </p>
+
+                <ul class="project-feature-list">
+                  <li>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Designed a robust relational MySQL database adhering to 3NF standards.</span>
+                  </li>
+                  <li>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Automated core business logic and state transitions using MySQL <strong>Triggers and Stored Procedures</strong>.</span>
+                  </li>
+                  <li>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Developed a Flask REST API backend with responsive dashboard frontend deployed online.</span>
+                  </li>
+                </ul>
+
+                <div class="project-tech-stack">
+                  <span class="tech-pill">Python</span>
+                  <span class="tech-pill">Flask</span>
+                  <span class="tech-pill">MySQL</span>
+                  <span class="tech-pill">Stored Procedures</span>
+                  <span class="tech-pill">Triggers</span>
+                  <span class="tech-pill">REST APIs</span>
+                  <span class="tech-pill">Render</span>
+                </div>
+              </div>
+
+              <div class="project-links">
+                <a href="https://vehicle-rental-system-j894.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                  <span>Launch Live Demo</span>
+                </a>
+                <a href="https://github.com/Rakshi0212/Vehicle-Rental-System" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         WORK EXPERIENCE SECTION
+         ========================================================================== -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Industry Internship</div>
+          <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+          <p class="section-desc">
+            Hands-on professional exposure building full-stack applications, database integration, and emerging software technologies.
+          </p>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <div>
+              <h3 class="experience-role">Full Stack Development Virtual Intern</h3>
+              <div class="experience-company">Code Alpha</div>
+            </div>
+            <div class="experience-duration">20 Jul 2026 – 20 Aug 2026</div>
+          </div>
+
+          <div class="experience-badges">
+            <span class="award-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              Certificate of Completion
+            </span>
+            <span class="award-badge" style="background: rgba(139, 92, 246, 0.12); border-color: rgba(139, 92, 246, 0.3); color: var(--accent-purple-light);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              Letter of Recommendation Awarded
+            </span>
+            <span class="award-badge" style="background: rgba(6, 182, 212, 0.12); border-color: rgba(6, 182, 212, 0.3); color: var(--accent-cyan-light);">
+              Virtual Internship
+            </span>
+          </div>
+
+          <ul class="experience-bullets">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Completed a 1-month virtual internship in Full Stack Development, gaining hands-on exposure to full-stack development and emerging technologies.</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Awarded a Certificate of Completion and a Letter of Recommendation by Code Alpha for outstanding technical output and problem-solving initiative.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EDUCATION & ACADEMIC JOURNEY
+         ========================================================================== -->
+    <section class="education-section" id="education">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Academic Background</div>
+          <h2 class="section-title">Education & <br><span class="gradient-text">Milestones</span></h2>
+          <p class="section-desc">
+            A consistent record of high academic distinction, foundational science, and focused computer science engineering.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Timeline Item 1: B.E. AI & DS -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-marker-inner"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">Aug 2024 – Sep 2028 (Expected)</span>
+                <span class="grade-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  Current CGPA: 9.1 / 10
+                </span>
+              </div>
+              <h3 class="degree-title">Bachelor of Engineering in Artificial Intelligence & Data Science</h3>
+              <div class="institution-name">Shri Madhwa Vadiraja Institute of Technology and Management (SMVITM), Bantakal</div>
+              <p class="timeline-details">
+                Currently pursuing in-depth coursework across Artificial Intelligence algorithms, Machine Learning principles, Relational Database Management Systems, Data Structures, and Software Engineering. Active participant in technical workshops and project buildathons.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Pre-University Course -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-marker-inner"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">Aug 2022 – Apr 2024</span>
+                <span class="grade-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  Percentage: 88.17%
+                </span>
+              </div>
+              <h3 class="degree-title">Pre-University Course (Science)</h3>
+              <div class="institution-name">Ananda Thirtha PU College, Pajaka, Udupi</div>
+              <p class="timeline-details">
+                Focused on Physics, Chemistry, Mathematics, and Computer Science. Built solid analytical problem-solving and mathematical foundations leading into engineering.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: SSLC -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-marker-inner"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period">May 2020 – Apr 2022</span>
+                <span class="grade-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  Percentage: 94.08%
+                </span>
+              </div>
+              <h3 class="degree-title">Secondary School Leaving Certificate (SSLC)</h3>
+              <div class="institution-name">St. Mary's High School, Shirva</div>
+              <p class="timeline-details">
+                Graduated with distinction and academic honors, demonstrating consistent diligence and competitive academic standing.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CERTIFICATIONS & CONTINUOUS LEARNING
+         ========================================================================== -->
+    <section class="certifications-section" id="certifications">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Credentials</div>
+          <h2 class="section-title">Certifications & <span class="gradient-text">Workshops</span></h2>
+          <p class="section-desc">
+            Continuous industry immersion across specialized AI bootcamps, Agentic AI paradigms, and full-stack virtual internships.
+          </p>
+        </div>
+
+        <div class="certs-grid">
+          
+          <!-- Cert 1 -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-icon">🚀</div>
+              <h3 class="cert-title">30-Day Artificial Intelligence Career Challenge (AICC)</h3>
+              <div class="cert-issuer">Skyllx Technologies Pvt. Ltd.</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">
+                Intensive 30-day challenge covering machine learning pipelines, practical model building, data processing, and industry AI problem statements.
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span>Skyllx Tech</span>
+              <span>Sep 2026</span>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-icon">🤖</div>
+              <h3 class="cert-title">Understanding Agentic AI: Hands-on Workshop</h3>
+              <div class="cert-issuer">ExvisitX</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">
+                Hands-on practical exploration of Autonomous Agent architectures, tool usage, multi-agent reasoning loops, and modern LLM orchestration.
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span>ExvisitX</span>
+              <span>Sep 2026</span>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-icon">💻</div>
+              <h3 class="cert-title">Full Stack Development Virtual Internship</h3>
+              <div class="cert-issuer">CodeAlpha</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">
+                Hands-on development virtual internship building modular software applications, web APIs, frontend layouts, and full-stack workflows.
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span>CodeAlpha</span>
+              <span>Aug 2026</span>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-icon">💡</div>
+              <h3 class="cert-title">AI Tools & Claude Workshop</h3>
+              <div class="cert-issuer">Be10x</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">
+                Practical mastery of cutting-edge generative AI workflows, prompt architecture, and productivity multipliers for software engineers.
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span>Be10x</span>
+              <span>Aug 2026</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT & CONNECT SECTION
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        
+        <div class="contact-card-main">
+          <div class="contact-grid">
+            
+            <!-- Left Column: Contact Channels -->
+            <div class="contact-info-col">
+              <div class="section-tag" style="margin-bottom: 0.75rem;">Get in Touch</div>
+              <h3>Let's Build Something <br><span class="gradient-text">Exceptional Together</span></h3>
+              <p>
+                I am actively seeking <strong>Data Science, Machine Learning, and Software Development internships</strong>. Whether you have an opportunity or want to discuss my projects, my inbox is open!
+              </p>
+
+              <div class="contact-methods">
+                
+                <!-- Academic Email Card -->
+                <div class="contact-method-card">
+                  <div class="method-details">
+                    <div class="method-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </div>
+                    <div>
+                      <div class="method-label">Academic Email (Official)</div>
+                      <a href="mailto:rakshitha.24ad034@sode-edu.in" class="method-value">rakshitha.24ad034@sode-edu.in</a>
+                    </div>
+                  </div>
+                  <button class="copy-btn" data-copy="rakshitha.24ad034@sode-edu.in" title="Copy Academic Email">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  </button>
+                </div>
+
+                <!-- Personal Email Card -->
+                <div class="contact-method-card">
+                  <div class="method-details">
+                    <div class="method-icon" style="background: rgba(139, 92, 246, 0.1); color: var(--accent-purple-light);">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </div>
+                    <div>
+                      <div class="method-label">Personal Email</div>
+                      <a href="mailto:rakshithak275@gmail.com" class="method-value">rakshithak275@gmail.com</a>
+                    </div>
+                  </div>
+                  <button class="copy-btn" data-copy="rakshithak275@gmail.com" title="Copy Personal Email">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  </button>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="contact-method-card">
+                  <div class="method-details">
+                    <div class="method-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </div>
+                    <div>
+                      <div class="method-label">Phone / WhatsApp</div>
+                      <a href="tel:+916362314817" class="method-value">+91 6362314817</a>
+                    </div>
+                  </div>
+                  <button class="copy-btn" data-copy="+916362314817" title="Copy Phone Number">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  </button>
+                </div>
+
+                <!-- LinkedIn Card -->
+                <div class="contact-method-card">
+                  <div class="method-details">
+                    <div class="method-icon" style="background: rgba(14, 118, 168, 0.15); color: #38bdf8;">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </div>
+                    <div>
+                      <div class="method-label">LinkedIn Profile</div>
+                      <a href="https://www.linkedin.com/in/rakshitha-kulal-30b36635a" target="_blank" rel="noopener noreferrer" class="method-value">linkedin.com/in/rakshitha-kulal-30b36635a</a>
+                    </div>
+                  </div>
+                  <button class="copy-btn" data-copy="https://www.linkedin.com/in/rakshitha-kulal-30b36635a" title="Copy LinkedIn URL">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  </button>
+                </div>
+
+                <!-- GitHub Card -->
+                <div class="contact-method-card">
+                  <div class="method-details">
+                    <div class="method-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </div>
+                    <div>
+                      <div class="method-label">GitHub Repository Profile</div>
+                      <a href="https://github.com/Rakshi0212" target="_blank" rel="noopener noreferrer" class="method-value">github.com/Rakshi0212</a>
+                    </div>
+                  </div>
+                  <button class="copy-btn" data-copy="https://github.com/Rakshi0212" title="Copy GitHub Link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  </button>
+                </div>
+
+                <!-- Location Card -->
+                <div class="contact-method-card">
+                  <div class="method-details">
+                    <div class="method-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <div>
+                      <div class="method-label">Residence Address</div>
+                      <div class="method-value" style="font-size: 0.9rem; line-height: 1.4;">Shri Mahalasa Narayani Temple, Nyarma, Shirva, Udupi – 574116, Karnataka</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Right Column: Interactive Quick Reach Form -->
+            <div class="contact-form-col">
+              <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name</label>
+                  <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Johnson" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Your Email</label>
+                  <input type="email" id="contact-email" class="form-input" placeholder="e.g. alex@company.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">Subject</label>
+                  <input type="text" id="contact-subject" class="form-input" placeholder="Internship Opportunity / Project Inquiry" value="Internship Opportunity - AI & Data Science" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">Message</label>
+                  <textarea id="contact-message" class="form-textarea" placeholder="Hi Rakshitha, we were impressed by your CareerPulse AI & Vehicle Rental projects..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;" id="btn-submit-message">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                  <span>Send Message Directly</span>
+                </button>
+
+                <div id="form-status" style="text-align: center; margin-top: 0.5rem;"></div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       RESUME MODAL (MODERN ATS VIEW & DOWNLOAD)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn close-modal-trigger" aria-label="Close modal">&times;</button>
+      
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <h2 id="resume-modal-title" style="font-size: 1.5rem; margin-bottom: 0.2rem;">Rakshitha — Curriculum Vitae</h2>
+          <span style="font-size: 0.85rem; color: var(--accent-cyan-light); font-family: var(--font-mono);">B.E. AI & Data Science (9.1 CGPA)</span>
+        </div>
+        <div style="display: flex; gap: 0.75rem;">
+          <button class="btn btn-secondary btn-sm" onclick="window.print()">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            Print
+          </button>
+          <a href="mailto:rakshithak275@gmail.com?subject=Requesting%20PDF%20Resume%20Copy" class="btn btn-primary btn-sm">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Request Official Copy
+          </a>
+        </div>
+      </div>
+
+      <!-- Resume Content Preview -->
+      <div style="font-size: 0.95rem; line-height: 1.7; color: var(--text-muted);">
+        <div style="border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 1rem; margin-bottom: 1.25rem;">
+          <h3 style="color: #fff; font-size: 1.4rem; letter-spacing: 0.05em;">RAKSHITHA</h3>
+          <p style="font-size: 0.85rem; margin-top: 0.25rem; color: var(--text-muted); line-height: 1.5;">
+            Shri Mahalasa Narayani Temple, Nyarma, Shirva, Udupi – 574116, Karnataka<br>
+            <strong>Phone:</strong> 6362314817 &nbsp;|&nbsp; 
+            <strong>Email:</strong> <a href="mailto:rakshitha.24ad034@sode-edu.in" style="color: var(--accent-cyan-light);">rakshitha.24ad034@sode-edu.in</a> &nbsp;|&nbsp;
+            <strong>GitHub:</strong> <a href="https://github.com/Rakshi0212" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan-light);">Rakshi0212</a> &nbsp;|&nbsp;
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rakshitha-kulal-30b36635a" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan-light);">rakshitha-kulal-30b36635a</a>
+          </p>
+        </div>
+
+        <h4 style="color: var(--accent-cyan-light); font-size: 0.95rem; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Objective</h4>
+        <p style="margin-bottom: 1.25rem;">
+          Third-year B.E. student in Artificial Intelligence and Data Science with hands-on experience in Python, SQL, data analysis. Seeking an internship to apply my skills in data science, machine learning and software development to real-world problems.
+        </p>
+
+        <h4 style="color: var(--accent-cyan-light); font-size: 0.95rem; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Education</h4>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.25rem;">
+          <li>
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <strong style="color: #fff;">Bachelor of Engineering in Artificial Intelligence and Data Science</strong>
+              <span style="color: var(--accent-cyan-light);">Aug 2024 – Sep 2028</span>
+            </div>
+            <div>Shri Madhwa Vadiraja Institute of Technology and Management (SMVITM), Bantakal</div>
+            <div>Persuing (3rd year) &nbsp;|&nbsp; <strong>Current CGPA: 9.1</strong></div>
+          </li>
+          <li>
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <strong style="color: #fff;">Pre-University Course (Science)</strong>
+              <span style="color: var(--accent-cyan-light);">Aug 2022 – Apr 2024</span>
+            </div>
+            <div>Anandathirtha PU College, Pajaka, Udupi &nbsp;|&nbsp; <strong>Percentage: 88.17%</strong></div>
+          </li>
+          <li>
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <strong style="color: #fff;">SSLC</strong>
+              <span style="color: var(--accent-cyan-light);">May 2020 – Apr 2022</span>
+            </div>
+            <div>St. Mary's High School, Shirva &nbsp;|&nbsp; <strong>Percentage: 94.08%</strong></div>
+          </li>
+        </ul>
+
+        <h4 style="color: var(--accent-cyan-light); font-size: 0.95rem; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Technical Skills</h4>
+        <p style="margin-bottom: 1.25rem; line-height: 1.8;">
+          <strong style="color: #fff;">Programming & Databases:</strong> Python, SQL (MySQL), Triggers & Stored Procedures<br>
+          <strong style="color: #fff;">Data Science & ML:</strong> NumPy, Pandas, Matplotlib, Machine Learning (basics), EDA (Basics), Power BI & Tableau (Basics)<br>
+          <strong style="color: #fff;">Tools & Deployment:</strong> Git, GitHub, Render, Microsoft Excel<br>
+          <strong style="color: #fff;">Soft Skills:</strong> Problem Solving, Teamwork, Communication
+        </p>
+
+        <h4 style="color: var(--accent-cyan-light); font-size: 0.95rem; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Work Experience</h4>
+        <div style="margin-bottom: 1.25rem;">
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <strong style="color: #fff;">Full Stack Development Virtual Intern – Code Alpha</strong>
+            <span style="color: var(--accent-cyan-light);">20 Jul 2026 – 20 Aug 2026</span>
+          </div>
+          <ul style="list-style: disc; padding-left: 1.25rem; margin-top: 0.35rem;">
+            <li>Completed a 1-month virtual internship in Full Stack Development, gaining hands-on exposure to full-stack development and emerging technologies.</li>
+            <li>Awarded a Certificate of Completion and a Letter of Recommendation by Code Alpha.</li>
+          </ul>
+        </div>
+
+        <h4 style="color: var(--accent-cyan-light); font-size: 0.95rem; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Projects</h4>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.25rem;">
+          <li>
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <strong style="color: #fff;">Vehicle Rental Management System</strong>
+              <span style="color: var(--accent-cyan-light);">May 2026</span>
+            </div>
+            <ul style="list-style: disc; padding-left: 1.25rem; margin-top: 0.25rem;">
+              <li>Developed a full-stack platform to manage vehicle rentals, covering customers, fleet, bookings, payments and maintenance tracking.</li>
+              <li>Designed a relational MySQL database and automated business logic using Triggers and Stored Procedures.</li>
+              <li>Built a Flask REST API backend and an interactive dashboard frontend; deployed the application on Render.</li>
+            </ul>
+            <div style="font-size: 0.85rem; margin-top: 0.3rem;">
+              <strong>GitHub:</strong> <a href="https://github.com/Rakshi0212/Vehicle-Rental-System" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan-light);">github.com/Rakshi0212/Vehicle-Rental-System</a> &nbsp;|&nbsp;
+              <strong>Live:</strong> <a href="https://vehicle-rental-system-j894.onrender.com/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan-light);">vehicle-rental-system-j894.onrender.com</a>
+            </div>
+          </li>
+          <li>
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <strong style="color: #fff;">Career Pulse AI – Tech Career Skill Gap & Salary Valuation Platform</strong>
+              <span style="color: var(--accent-cyan-light);">Sep 2026</span>
+            </div>
+            <ul style="list-style: disc; padding-left: 1.25rem; margin-top: 0.25rem;">
+              <li>Built an end-to-end Data Science and Machine Learning platform that estimates market salary (₹ LPA) for students, fresh graduates and tech job seekers.</li>
+              <li>Evaluates job-readiness tiers, identifies high-impact missing skills and generates personalized career roadmaps.</li>
+              <li>Deployed the application online using Render.</li>
+            </ul>
+            <div style="font-size: 0.85rem; margin-top: 0.3rem;">
+              <strong>GitHub:</strong> <a href="https://github.com/Rakshi0212/CareerPulse-AI" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan-light);">github.com/Rakshi0212/CareerPulse-AI</a> &nbsp;|&nbsp;
+              <strong>Live:</strong> <a href="https://careerpulse-ai-qmvh.onrender.com" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan-light);">careerpulse-ai-qmvh.onrender.com</a>
+            </div>
+          </li>
+        </ul>
+
+        <h4 style="color: var(--accent-cyan-light); font-size: 0.95rem; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Certifications</h4>
+        <ul style="list-style: disc; padding-left: 1.25rem; margin-bottom: 1.25rem;">
+          <li>30-Day Artificial Intelligence Career Challenge (AICC) – Skyllx Technologies Pvt. Ltd. (Sep 2026)</li>
+          <li>Understanding Agentic AI: Hands-on Workshop – ExvisitX (Sep 2026)</li>
+          <li>AI Tools & Claude Workshop – Be10x (Aug 2026)</li>
+        </ul>
+
+        <h4 style="color: var(--accent-cyan-light); font-size: 0.95rem; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Languages</h4>
+        <p>English (Conversational), Kannada (Conversational), Hindi (Basic)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast-notification">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    <span id="toast-msg">Text copied to clipboard</span>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 0.5rem;">
+            <div class="logo-badge">R</div>
+            <span class="brand-text">Rakshitha</span>
+          </div>
+          <p style="font-size: 0.9rem;">
+            Third-year B.E. student in Artificial Intelligence and Data Science at SMVITM (CGPA: 9.1). Building deployable machine learning platforms and advanced database systems.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://github.com/Rakshi0212" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/rakshitha-kulal-30b36635a" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:rakshitha.24ad034@sode-edu.in" class="footer-social-link" title="Academic Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+          <a href="tel:+916362314817" class="footer-social-link" title="Call">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Rakshitha. Designed & Built with pure modern HTML5, CSS3 & JavaScript.
+        </div>
+        <div>
+          Shri Mahalasa Narayani Temple, Nyarma, Shirva, Udupi – 574116, Karnataka
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
